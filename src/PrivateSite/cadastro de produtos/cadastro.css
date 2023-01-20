@@ -1,0 +1,53 @@
+input, select, textarea {
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+
+
+.codigop {
+    width: 20%;
+}
+
+.nomep {
+    width: 80%;
+}
+
+.descp {
+    width: 100%;
+}
+
+.precop {
+width: 20%;
+}
+
+.valorp {
+    width: 20%;
+
+}
+
+.fornp {
+    width: 60%;
+}
+
+.alturap{
+  width: 20%;
+
+}
+
+.largurap{
+  width: 20%;
+
+}
+
+.comprimentop{
+  width: 20%;
+
+}
+
+.pesop{
+  width: 20%;
+
+}

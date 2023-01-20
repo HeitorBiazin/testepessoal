@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 import Header from '../site/Components/header'
 import Footer from '../site/Components/footer';
 
-import firebase from '../firebase/firebase'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 
@@ -20,13 +19,11 @@ function Criar() {
   createUserWithEmailAndPassword(auth, email, senha)
     .then((userCredential) => {
       // Signed in 
-      const user = userCredential.user;
       setSuccess('Criado com sucesso!');
         setError(null);
     })
     .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
+     
       setError('Erro ao criar usuário!');
         setSuccess(null);
     });
@@ -40,7 +37,7 @@ function Criar() {
       setSenha(event.target.value)
     }
 
-  return <section id="login" className='bglogin'>
+  return <section id="Criar" className='bglogin'>
     <>
     <Header/>
     </>
@@ -49,11 +46,7 @@ function Criar() {
         <div className="card cardlg mt-5">
           <div className="card-header">
             <h3 className='sing'>Criar Conta</h3>
-            <div className="d-flex justify-content-end social_icon">
-              <span><i className="fab fa-facebook-square"></i></span>
-              <span><i className="fab fa-google-plus-square"></i></span>
-              <span><i className="fab fa-twitter-square"></i></span>
-            </div>
+           
           </div>
           <div className="card-body">
             <form>
@@ -83,7 +76,7 @@ function Criar() {
           </div>
           <div className="card-footer">
             <div className="d-flex justify-content-center links">
-              Já possui uma conta?<Link to="/app">Login</Link>
+              Já possui uma conta?<Link to="/Login">Login</Link>
             </div>
             <div className="d-flex justify-content-center">
               <Link to="/resenha">Esqueceu sua senha?</Link>

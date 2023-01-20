@@ -13,7 +13,7 @@ class Header extends Component {
                 <div className="container-fluid">    
                     
                                                    
-                    <Link to="/"><a className="navbar-brand" href="/#"><img src="images/hblogo.png" alt="hblogo" /> Sistemas</a></Link>
+                    <Link to="/" className="navbar-brand"><img src="images/hblogo.png" alt="hblogo" /> Soluções Web</Link>
                     
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                     <span className="navbar-toggler-icon"></span>

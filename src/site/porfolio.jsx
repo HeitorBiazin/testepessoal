@@ -1,18 +1,12 @@
 import React from 'react';
-import Carousel from './Components/carousel';
+import CarouselFadeExample from './Components/carousel1';
 
-const images = [
-    "images/portfolioex.jpg",
-    "images/sistemabanner.png",
-    "images/portfolioex.jpg",
-  ];
 
 function Portfolio(){
         return <section id="Portfolio">
             <div className="container-fluid">
-             <h1 className='txtport'>Alguns dos Nossos Clientes</h1>
-             <Carousel images={images} />
-                
+             <h1 className='txtport'>Alguns dos Nossos Trabalhos</h1>
+                <CarouselFadeExample />                
             </div>
         </section>
     }

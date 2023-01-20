@@ -3,9 +3,7 @@ import Header from '../site/Components/header'
 import Footer from '../site/Components/footer';
 import { Link } from 'react-router-dom';
 
-import firebase from '../firebase/firebase'
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
-import { FirebaseError } from 'firebase/app';
 
 
 /*Pagina para enviar e-mail de redefinição de senha */
@@ -68,7 +66,7 @@ import { FirebaseError } from 'firebase/app';
           </div>
           <div className="card-footer">
             <div className="d-flex justify-content-center links">
-              Já possui uma conta?<Link to="/app">Login</Link>
+              Já possui uma conta?<Link to="/Login">Login</Link>
             </div>
             <div className="d-flex justify-content-center">
               <Link to="/resenha">Esqueceu sua senha?</Link>

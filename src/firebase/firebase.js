@@ -1,14 +1,18 @@
 import {initializeApp} from "firebase/app";
 
-const firebaseConfig = {
-    apiKey: "AIzaSyD09A7AKreiMIHEKwUnNB7oTrlrOGk1P3U",
-    authDomain: "hbsistemas-682ce.firebaseapp.com",
-    projectId: "hbsistemas-682ce",
-    storageBucket: "hbsistemas-682ce.appspot.com",
-    messagingSenderId: "682676997693",
-    appId: "1:682676997693:web:5aaabbfff0ed148c896454"
-  };
 
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: "hbsistemas-682ce.firebaseapp.com",
+  databaseURL: "https://hbsistemas-682ce-default-rtdb.firebaseio.com",
+  projectId: "hbsistemas-682ce",
+  storageBucket: "hbsistemas-682ce.appspot.com",
+  messagingSenderId: "682676997693",
+  appId: process.env.REACT_APP_APP_ID
+  };
+  
   // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  export default app;
+const app = initializeApp(firebaseConfig);
+
+
+export default app
